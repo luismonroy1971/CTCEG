@@ -1,5 +1,5 @@
 /* ==========================================================
-   CTCE Perú – interacciones y animaciones
+   China Tiesiju Civil Engineering Group Co. Ltd. Sucursal del Perú – interacciones y animaciones
    ========================================================== */
 (() => {
   const $ = (s, c = document) => c.querySelector(s);

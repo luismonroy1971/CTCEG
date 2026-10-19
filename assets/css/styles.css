@@ -1,5 +1,5 @@
 /* ==========================================================
-   CTCE Perú – estilos
+   China Tiesiju Civil Engineering Group Co. Ltd. Sucursal del Perú – estilos
    ========================================================== */
 :root {
   --bg: #06101d;
@@ -96,7 +96,7 @@ p { color: var(--muted); margin: 0 0 18px; }
 }
 .preloader__inner { display: grid; justify-items: center; gap: 18px; }
 .preloader__logo { width: 84px; border-radius: 14px; }
-.preloader__zh { font: 700 15px/1 "Noto Sans SC", sans-serif; letter-spacing: .5em; color: var(--muted); padding-left: .5em; }
+.preloader__zh { font: 500 13px/1.5 var(--font); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); text-align: center; max-width: 320px; padding: 0 16px; }
 .preloader__bar { width: 220px; height: 2px; background: var(--line); overflow: hidden; }
 .preloader__bar span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--blue-2), var(--accent)); }
 .preloader__count { font: 500 13px/1 var(--display); color: var(--muted); letter-spacing: .1em; }
@@ -134,9 +134,9 @@ p { color: var(--muted); margin: 0 0 18px; }
 .header__inner { display: flex; align-items: center; gap: 32px; }
 .brand { display: flex; align-items: center; gap: 12px; margin-right: auto; }
 .brand img { width: 44px; height: auto; border-radius: 9px; }
-.brand__text { font: 500 18px/1.1 var(--display); }
-.brand__text strong { font-weight: 700; }
-.brand__text small { display: block; font: 400 10.5px/1.4 var(--font); color: var(--muted); letter-spacing: .04em; }
+.brand__text { font: 500 15px/1.15 var(--display); max-width: 230px; }
+.brand__text strong { font-weight: 700; display: block; }
+.brand__text small { display: block; margin-top: 2px; font: 500 11px/1.3 var(--font); color: var(--accent); letter-spacing: .12em; text-transform: uppercase; }
 .nav { display: flex; gap: 30px; }
 .nav a { font-size: 14.5px; color: rgba(233,238,245,.82); position: relative; padding: 6px 0; transition: color .3s; }
 .nav a::after { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .45s var(--ease); }
@@ -148,7 +148,7 @@ p { color: var(--muted); margin: 0 0 18px; }
 .menu-open .burger span:first-child { top: 21px; transform: rotate(45deg); }
 .menu-open .burger span:last-child { top: 21px; transform: rotate(-45deg); }
 @media (max-width: 1080px) { .nav, .header__cta { display: none; } .burger { display: block; } }
-@media (max-width: 480px) { .brand__text small { display: none; } }
+@media (max-width: 480px) { .brand__text { font-size: 12.5px; max-width: 180px; } .brand__text small { font-size: 9.5px; } }
 
 .mmenu {
   position: fixed; inset: 0; z-index: 450; background: var(--bg-2);
@@ -381,7 +381,7 @@ p { color: var(--muted); margin: 0 0 18px; }
 
 /* ---------- Footer ---------- */
 .footer { background: #040b15; padding: 80px 0 30px; overflow: hidden; }
-.footer__big { font: 700 clamp(60px, 15vw, 230px)/.85 var(--display); letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.12); white-space: nowrap; margin-bottom: 60px; text-align: center; }
+.footer__big { font: 700 clamp(48px, 11.5vw, 180px)/.85 var(--display); letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.12); white-space: nowrap; margin-bottom: 60px; text-align: center; }
 .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; border-bottom: 1px solid var(--line); }
 .footer__grid h4 { font: 600 13px var(--font); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 18px; }
 .footer__grid a, .footer__grid span { display: block; padding: 5px 0; font-size: 15px; color: #c5d0dc; transition: color .3s, transform .3s; }
